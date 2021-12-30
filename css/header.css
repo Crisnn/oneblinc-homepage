@@ -1,0 +1,28 @@
+header {
+  padding: 3.2rem 0;
+  background-color: #fff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container #oneblinc-logo {
+  width: 19.2rem;
+  height: auto;
+}
+
+.header-container div {
+  display: flex;
+  align-items: center;
+}
+
+header.top-page {
+  background-color: var(--background-blue);
+}
+
+header.top-page .nav-link {
+  color: #fff;
+}

@@ -1,0 +1,15 @@
+#hero {
+  background-color: var(--background-blue);
+}
+
+.hero {
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: 5.6rem;
+  font-weight: 700;
+}
