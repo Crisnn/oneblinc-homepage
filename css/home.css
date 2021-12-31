@@ -1,15 +1,246 @@
-#hero {
-  background-color: var(--background-blue);
+/* HOME CLASSES ======================================= */
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.hero {
+.section-description {
+  font-size: 3.2rem;
+  margin-bottom: 8rem;
+}
+
+/* HERO ======================================= */
+
+#hero {
+  background-color: var(--background-blue);
   height: calc(100vh - 120px);
   display: flex;
   align-items: center;
+}
+
+.hero {
+  display: none;
+  align-items: center;
+}
+
+.hero div:first-child {
+  flex: 17;
+}
+
+.hero div:last-child {
+  width: 50%;
+}
+
+.hero div:last-child img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .hero h2 {
   color: #fff;
   font-size: 5.6rem;
   font-weight: 700;
+  line-height: 5.6rem;
+  margin-bottom: 2.44rem;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 3rem;
+}
+
+#hero .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hero .container div:last-child {
+  display: flex;
+  align-self: stretch;
+  justify-content: flex-end;
+}
+
+#hero .container div:last-child .controls:first-child {
+  border-radius: 50% 0 0 50%;
+}
+
+#hero .container div:last-child .controls:last-child {
+  border-radius: 0 50% 50% 0;
+}
+
+#hero .container .controls {
+  cursor: pointer;
+  padding: 1.6rem;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+#hero .container .controls:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fade {
+  animation: fade 1.5s ease-out forwards;
+}
+
+/* BEST-RATINGS ======================================= */
+
+#best-ratings {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+#best-ratings h2 {
+  color: var(--gray-24);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+#best-ratings .container > div {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#best-ratings .container > div img {
+  width: 100%;
+}
+
+/* HOW IT WORKS ======================================= */
+
+#how-it-works {
+  background-color: var(--gray-brand);
+  padding: 10.4rem 0;
+}
+
+#how-it-works .container {
+  padding: 10.4rem 25.2rem;
+}
+
+#how-it-works h2,
+#how-it-works h3,
+#how-it-works p {
+  color: var(--gray-24);
+  text-align: center;
+}
+
+#how-it-works .container > div {
+  margin-bottom: 6.4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#how-it-works .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19.2rem;
+}
+
+#how-it-works .step .step-icon {
+  margin-bottom: 3.2rem;
+  width: 100%;
+  height: auto;
+}
+
+#how-it-works .step h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+#how-it-works .step p {
+  font-size: 1.6rem;
+}
+
+/* ABOUT-US ======================================= */
+
+#about-us {
+  background-color: var(--dark-green);
+  padding: 10.4rem 0;
+  color: #fff;
+}
+
+#about-us .container > p:first-of-type {
+  width: min(84.1rem, 100%);
+}
+
+#oneblinc-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.7rem;
+  margin-bottom: 3.2rem;
+}
+
+.oneblinc-feature {
+  max-width: 22.4rem;
+  padding: 2.4rem;
+  border: solid 1px #fff;
+}
+
+.oneblinc-feature h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.oneblinc-feature p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#about-us .container > p:last-of-type {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+#about-us button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* REVIEWS ======================================= */
+
+#reviews {
+  background-color: var(--light-orange);
+  color: #fff;
+  padding: 10.4rem 0;
+}
+
+#reviews .section-description {
+  width: min(84.1rem, 100%);
+}
+
+#reviews button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* KEYFRAMES ======================================= */
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
