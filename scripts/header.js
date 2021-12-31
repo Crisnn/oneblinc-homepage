@@ -16,7 +16,12 @@ document.addEventListener('scroll', e => {
       scrolled = false;
       headerUI.classList.add('top-page');
       headerUI.classList.remove('sticky');
-      oneBlincLogoUI.src = 'assets/pngs/oneblinc-logo-dark.png';
+
+      if (headerUI.classList.contains('secondary')) {
+        oneBlincLogoUI.src = 'assets/pngs/oneblinc-logo-dark.png';
+      } else {
+        oneBlincLogoUI.src = 'assets/pngs/oneblinc-logo-light.png';
+      }
     }
   }
 });

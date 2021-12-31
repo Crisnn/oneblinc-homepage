@@ -1,9 +1,13 @@
-header {
+#page-header {
   position: sticky;
   z-index: 3;
   top: 0;
-  background-color: var(--background-blue);
+  background-color: var(--gray-brand);
   padding: 3.2rem 0;
+}
+
+#page-header.secondary {
+  background-color: var(--background-blue);
 }
 
 .header-container {
@@ -22,15 +26,16 @@ header {
   align-items: center;
 }
 
-header .nav-link {
+#page-header.secondary .nav-link {
   color: #fff;
 }
 
-header.sticky .nav-link {
+#page-header.sticky .nav-link,
+#page-header .nav-link {
   color: var(--gray-24);
 }
 
-header.sticky {
+#page-header.sticky {
   position: sticky;
   top: 0;
   background-color: var(--gray-96);
@@ -38,12 +43,12 @@ header.sticky {
   animation: header-appear 0.2s ease-out forwards;
 }
 
-header.top-page {
+#page-header.top-page {
   animation: background-transition 0.2s ease-out forwards;
 }
 
-header.top-page .nav-link {
-  color: #fff;
+#page-header.secondary.top-page {
+  animation: background-secondary-transition 0.2s ease-out forwards;
 }
 
 @keyframes header-appear {
@@ -57,6 +62,16 @@ header.top-page .nav-link {
 }
 
 @keyframes background-transition {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: var(--gray-brand);
+  }
+}
+
+@keyframes background-secondary-transition {
   from {
     background-color: #fff;
   }
