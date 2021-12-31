@@ -1,6 +1,9 @@
 header {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background-color: var(--background-blue);
   padding: 3.2rem 0;
-  background-color: #fff;
 }
 
 .header-container {
@@ -19,10 +22,45 @@ header {
   align-items: center;
 }
 
+header .nav-link {
+  color: #fff;
+}
+
+header.sticky .nav-link {
+  color: var(--gray-24);
+}
+
+header.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  animation: header-appear 0.2s ease-out forwards;
+}
+
 header.top-page {
-  background-color: var(--background-blue);
+  animation: background-transition 0.2s ease-out forwards;
 }
 
 header.top-page .nav-link {
   color: #fff;
+}
+
+@keyframes header-appear {
+  from {
+    transform: translateY(-12rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes background-transition {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: var(--background-blue);
+  }
 }
