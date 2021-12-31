@@ -33,7 +33,8 @@ header.sticky .nav-link {
 header.sticky {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: var(--gray-96);
+  box-shadow: 0 0.4rem 0.8rem 0 rgb(20 20 20 / 8%);
   animation: header-appear 0.2s ease-out forwards;
 }
 
