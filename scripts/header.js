@@ -9,7 +9,7 @@ document.addEventListener('scroll', e => {
       scrolled = true;
       headerUI.classList.remove('top-page');
       headerUI.classList.add('sticky');
-      oneBlincLogoUI.src = 'assets/pngs/oneblinc-logo-light.png';
+      oneBlincLogoUI.src = 'assets/oneblinc-logo-light.png';
     }
   } else {
     if (scrolled) {
@@ -18,9 +18,9 @@ document.addEventListener('scroll', e => {
       headerUI.classList.remove('sticky');
 
       if (headerUI.classList.contains('secondary')) {
-        oneBlincLogoUI.src = 'assets/pngs/oneblinc-logo-dark.png';
+        oneBlincLogoUI.src = 'assets/oneblinc-logo-dark.png';
       } else {
-        oneBlincLogoUI.src = 'assets/pngs/oneblinc-logo-light.png';
+        oneBlincLogoUI.src = 'assets/oneblinc-logo-light.png';
       }
     }
   }

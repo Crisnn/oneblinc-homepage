@@ -44,7 +44,7 @@
 }
 
 #hero .container div:first-child {
-  background: url('../assets/pngs/about-background.png') no-repeat center
+  background: url('../assets/about-background.jpg') no-repeat center
     center/cover;
   height: 40rem;
   padding: 9.6rem;
