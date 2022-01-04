@@ -76,7 +76,7 @@ a {
   border: none;
   font-weight: 700;
   font-size: 1.4rem;
-  padding: 2rem;
+  padding: 2rem 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   transition: opacity 0.2s;
@@ -91,8 +91,31 @@ a {
   background-color: var(--dark-orange);
 }
 
+.btn.dark-green {
+  background-color: var(--dark-green);
+}
+
+.no-btn-styling {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .block {
   display: block;
+}
+
+.hover {
+  transition: opacity 0.2s;
+}
+
+.hover:hover {
+  opacity: 0.8;
+}
+
+.centered {
+  display: block;
+  margin: 0 auto;
 }
 
 .uppercase {
