@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/hero.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>OneBlinc|Financial solutions for Public and Health employees</title>
   <meta name="description"
@@ -19,7 +18,8 @@
 <body>
   <header id="page-header" class="secondary">
     <div class="header-container">
-      <img id="oneblinc-logo" src="assets/pngs/oneblinc-logo-dark.png" alt="OneBlinc Logo" />
+      <a class="hover" href="https://oneblinc.com"><img id="oneblinc-logo" src="assets/pngs/oneblinc-logo-dark.png"
+          alt="OneBlinc Logo" /></a>
       <h1 class="sr-only">OneBlinc</h1>
       <div>
         <nav id="header-navbar">
@@ -30,9 +30,28 @@
           <a class="nav-link" href="index.html">Blog</a>
           <a class="nav-link" href="index.html">Toolbox</a>
           <a class="nav-link" href="index.html">Cashback</a>
-          <a class="nav-link" href="index.html">Login</a>
+          <a class="nav-link login" href="index.html">
+            <span>Login</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.5 4C14.4444 4 16 5.55556 16 7.5C16 9.44444 14.4444 11 12.5 11C10.5556 11 9 9.44444 9 7.5C9 5.55556 10.5556 4 12.5 4ZM12.5 4.82639C11.0417 4.82639 9.82639 6.04167 9.82639 7.5C9.82639 8.95833 11.0417 10.1736 12.5 10.1736C13.9583 10.1736 15.1736 8.95833 15.1736 7.5C15.1736 6.04167 13.9583 4.82639 12.5 4.82639ZM12.5508 20C10.4688 20 8.38672 19.6433 6.30469 18.9299C6.15234 18.879 6 18.7261 6 18.5223C6 14.9045 8.89453 12 12.5 12C16.1055 12 19 14.9045 19 18.5223C19 18.7261 18.8984 18.879 18.6953 18.9299C16.6641 19.6433 14.6328 20 12.5508 20ZM6.86328 18.2166C8.79297 18.828 10.6719 19.1338 12.5508 19.1338C14.4297 19.1338 16.2578 18.828 18.1367 18.2166C17.9844 15.2102 15.4961 12.8662 12.5 12.8662C9.50391 12.8662 7.01562 15.2102 6.86328 18.2166Z" />
+            </svg>
+          </a>
         </nav>
-        <button class="btn light-orange">Get started</button>
+        <button id="get-started-btn" class="btn light-orange">Get started</button>
+        <button class="no-btn-styling" id="toggle-menu">
+          <svg class="close-icon icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 9 8">
+            <path fill-rule="evenodd"
+              d="M6.873 5.761c.17.17.17.443 0 .612-.084.085-.195.127-.306.127-.11 0-.221-.042-.306-.127L4.5 4.612 2.739 6.373c-.085.085-.196.127-.306.127-.111 0-.222-.042-.306-.127-.17-.169-.17-.443 0-.612L3.888 4 2.127 2.239c-.17-.17-.17-.443 0-.612.169-.17.443-.17.612 0L4.5 3.388l1.761-1.761c.17-.17.443-.17.612 0 .17.169.17.443 0 .612L5.112 4l1.761 1.761z"
+              clip-rule="evenodd" />
+          </svg>
+          <svg class="hamburguer-icon icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M2 3h20.16v3.6H2V3zm0 7.2h20.16v3.6H2v-3.6zm20.16 7.2H2V21h20.16v-3.6z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -41,11 +60,15 @@
       <div>
         <div class="hero fade">
           <div>
-            <h2>Need an extra push to get to the end of the month? Just Blinc!</h2>
-            <p>We offer quick and innovative loans to get you out of a bind. Learn more about our customized solutions
-              for
-              Federal Employees.</p>
-            <button class="btn">Get Started</button>
+            <div>
+              <h2>Need an extra push to get to the end of the month? Just Blinc!</h2>
+              <p>We offer quick and innovative loans to get you out of a bind. Learn more about our customized solutions
+                for
+                Federal Employees.</p>
+            </div>
+            <a href="https://oneblinc.com/sign-up">
+              <button class="btn">Get Started</button>
+            </a>
           </div>
           <div>
             <img src="assets/pngs/hero/banner-1.png" alt="Happy people after OneBlinc" />
@@ -55,7 +78,9 @@
           <div>
             <h2>Life happens in a Blinc</h2>
             <p>A quick and innovative way to get you out of a bind. Customized solutions for Federal Employees.</p>
-            <button class="btn">Get Started</button>
+            <a href="https://oneblinc.com/sign-up">
+              <button class="btn">Get Started</button>
+            </a>
           </div>
           <div>
             <img src="assets/pngs/hero/banner-2.png" alt="Happy people after OneBlinc" />
@@ -67,7 +92,9 @@
             <p>Our lightning-fast approvals, no credit check and same day deposit, will get you up and running in no
               time.
             </p>
-            <button class="btn">Get Started</button>
+            <a href="https://oneblinc.com/sign-up">
+              <button class="btn">Get Started</button>
+            </a>
           </div>
           <div>
             <img src="assets/pngs/hero/banner-3.png" alt="Happy people after OneBlinc" />
@@ -140,6 +167,7 @@
             <p>Follow simple steps to finalize the process and get access to the funds you need.</p>
           </div>
         </div>
+        <button class="btn centered">Get started</button>
       </div>
     </section>
     <section id="about-us">
@@ -260,7 +288,10 @@
           <a class="nav-link" href="index.html">Blog</a>
           <a class="nav-link" href="index.html">Toolbox</a>
           <a class="nav-link" href="index.html">Cashback</a>
-          <button class="btn light-orange">Get started</button>
+          <a href="https://oneblinc.com/sign-up">
+
+            <button class="btn light-orange">Get started</button>
+          </a>
         </nav>
       </div>
       <div id="footer-content">

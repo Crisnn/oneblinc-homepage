@@ -73,3 +73,38 @@ footer.secondary {
 #footer-content div:last-child nav a:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 1024px) {
+  #footer-actions nav {
+    flex-direction: column;
+  }
+
+  #footer-actions .nav-link {
+    margin: 0 0 1.2rem;
+  }
+
+  #footer-content {
+    flex-direction: column;
+  }
+
+  #footer-content div:first-child {
+    margin-bottom: 3.2rem;
+  }
+
+  #footer-content div:last-child {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer-content div:last-child nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer-content div:last-child nav a {
+    padding: 0.5rem;
+    margin: 0 0 1rem;
+  }
+}
