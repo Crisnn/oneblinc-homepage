@@ -7,6 +7,10 @@
   color: #fff;
 }
 
+.about-section.light .about-content {
+  color: #fff;
+}
+
 .about-section h2 {
   font-size: 2rem;
   font-weight: bold;
@@ -16,6 +20,7 @@
 
 .about-content {
   display: flex;
+  color: var(--gray-24);
 }
 
 .about-content h3 {
@@ -73,4 +78,46 @@
 
 #our-people {
   background-color: var(--dark-blue);
+}
+
+@media (max-width: 1024px) {
+  #hero .container div:first-child {
+    padding: 5.8rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section h2 {
+    text-align: center;
+  }
+
+  .about-content h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .about-content p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 9.6rem 0;
+  }
+
+  #hero .container div:first-child {
+    height: 30rem;
+    width: auto;
+  }
+
+  #hero h1 {
+    font-size: 3.2rem;
+  }
 }
