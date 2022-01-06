@@ -125,6 +125,10 @@ a {
   font-weight: 700;
 }
 
+.none {
+  display: none;
+}
+
 /* SCREEN-READERS ======================================= */
 
 .sr-only {

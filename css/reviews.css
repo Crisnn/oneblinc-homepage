@@ -7,7 +7,7 @@
   color: var(--gray-24);
 }
 
-#reviews .container div:first-child {
+#reviews .container > div:first-child {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4.8rem;
@@ -58,6 +58,10 @@
   display: inline-block;
 }
 
+#trustpilot-reviews {
+  padding: 7.2rem 0 13.6rem;
+}
+
 @media (min-width: 481px) and (max-width: 1024px) {
   #trustpilot-cta {
     flex-direction: column-reverse;
@@ -70,6 +74,10 @@
   #trustpilot-cta div {
     text-align: center;
     width: 100%;
+  }
+
+  #trustpilot-reviews {
+    padding: 7.2rem 0 10.4rem;
   }
 }
 
@@ -108,5 +116,9 @@
   #trustpilot-cta div h2 {
     font-size: 3.2rem;
     margin-bottom: 1.6rem;
+  }
+
+  #trustpilot-reviews {
+    padding: 9.6rem 0;
   }
 }

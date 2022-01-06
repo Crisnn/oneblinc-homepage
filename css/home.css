@@ -385,6 +385,22 @@
   margin: 0 auto;
 }
 
+.trustpilot-home-container {
+  margin: 0 -5rem;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .trustpilot-home-container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .trustpilot-home-container {
+    margin: 0 -1.5rem;
+  }
+}
+
 /* KEEP IN TOUCH ======================================= */
 
 #keep-in-touch {
