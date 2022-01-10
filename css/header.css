@@ -84,6 +84,10 @@
   animation: background-secondary-transition 0.2s ease-out forwards;
 }
 
+#page-header.sticky {
+  animation: none;
+}
+
 #page-header.top-page.open-menu {
   animation: none;
 }
