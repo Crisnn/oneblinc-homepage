@@ -7,31 +7,35 @@ const hamburguerIconUI = document.querySelector('#hamburguer-icon');
 
 let scrolled = false;
 
-document.addEventListener('scroll', e => {
-  if (window.scrollY > 120) {
-    if (!scrolled) {
-      scrolled = true;
-      headerUI.classList.remove('top-page');
-      headerUI.classList.add('sticky');
-      oneBlincLogoUI.src = 'assets/oneblinc-logo-light.png';
-    }
-  } else {
-    if (scrolled) {
-      scrolled = false;
-      headerUI.classList.add('top-page');
-      headerUI.classList.remove('sticky');
-
-      if (
-        headerUI.classList.contains('secondary') &&
-        !headerUI.classList.contains('open-menu')
-      ) {
-        oneBlincLogoUI.src = 'assets/oneblinc-logo-dark.png';
-      } else {
+document.addEventListener(
+  'scroll',
+  e => {
+    if (window.scrollY > 120) {
+      if (!scrolled) {
+        scrolled = true;
+        headerUI.classList.remove('top-page');
+        headerUI.classList.add('sticky');
         oneBlincLogoUI.src = 'assets/oneblinc-logo-light.png';
       }
+    } else {
+      if (scrolled) {
+        scrolled = false;
+        headerUI.classList.add('top-page');
+        headerUI.classList.remove('sticky');
+
+        if (
+          headerUI.classList.contains('secondary') &&
+          !headerUI.classList.contains('open-menu')
+        ) {
+          oneBlincLogoUI.src = 'assets/oneblinc-logo-dark.png';
+        } else {
+          oneBlincLogoUI.src = 'assets/oneblinc-logo-light.png';
+        }
+      }
     }
-  }
-});
+  },
+  { passive: true }
+);
 
 function toggleHeader() {
   closeIconUI.classList.toggle('hidden');
