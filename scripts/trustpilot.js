@@ -3,12 +3,6 @@ const mobileTabletTrustpilotUI = document.querySelector(
   '#mobile-tablet-trustpilot'
 );
 
-const initialWidth = document.body.clientWidth;
-
-function isTabletOrMobile(width) {
-  return width < 1025;
-}
-
 function handleShowTrustpilotWidget(width) {
   if (isTabletOrMobile(width)) {
     desktopTrustpilotUI.classList.add('none');

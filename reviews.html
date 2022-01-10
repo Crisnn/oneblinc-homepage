@@ -22,7 +22,8 @@
 <body>
   <header id="page-header">
     <div class="header-container">
-      <img id="oneblinc-logo" src="assets/oneblinc-logo-light.png" alt="OneBlinc Logo" />
+      <a class="hover" href="https://oneblinc.com"><img id="oneblinc-logo" src="assets/oneblinc-logo-light.png"
+          alt="OneBlinc Logo" /></a>
       <h1 class="sr-only">OneBlinc</h1>
       <div>
         <nav id="header-navbar">
@@ -42,20 +43,45 @@
           </a>
         </nav>
         <button id="get-started-btn" class="btn light-orange">Get started</button>
-        <button class="no-btn-styling" id="toggle-menu">
-          <svg class="close-icon icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        <button class="no-btn-styling" id="toggle-menu" onclick="toggleHeader()">
+          <svg id="close-icon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
             viewBox="0 0 9 8">
             <path fill-rule="evenodd"
               d="M6.873 5.761c.17.17.17.443 0 .612-.084.085-.195.127-.306.127-.11 0-.221-.042-.306-.127L4.5 4.612 2.739 6.373c-.085.085-.196.127-.306.127-.111 0-.222-.042-.306-.127-.17-.169-.17-.443 0-.612L3.888 4 2.127 2.239c-.17-.17-.17-.443 0-.612.169-.17.443-.17.612 0L4.5 3.388l1.761-1.761c.17-.17.443-.17.612 0 .17.169.17.443 0 .612L5.112 4l1.761 1.761z"
               clip-rule="evenodd" />
           </svg>
-          <svg class="hamburguer-icon icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          <svg id="hamburguer-icon" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
             viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M2 3h20.16v3.6H2V3zm0 7.2h20.16v3.6H2v-3.6zm20.16 7.2H2V21h20.16v-3.6z"
               clip-rule="evenodd" />
           </svg>
         </button>
       </div>
+    </div>
+    <div id="header-options">
+      <ul>
+        <li>
+          <a class="nav-mobile-link selected" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-mobile-link" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="nav-mobile-link" href="index.html">Faq</a>
+        </li>
+        <li>
+          <a class="nav-mobile-link" href="reviews.html">Reviews</a>
+        </li>
+        <li>
+          <a class="nav-mobile-link" href="index.html">Blog</a>
+        </li>
+        <li>
+          <a class="nav-mobile-link" href="index.html">Toolbox</a>
+        </li>
+        <li>
+          <a class="nav-mobile-link" href="index.html">Cashback</a>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
