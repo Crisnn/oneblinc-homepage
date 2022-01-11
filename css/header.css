@@ -76,22 +76,6 @@
   fill: var(--gray-24);
 }
 
-#page-header.top-page {
-  animation: background-transition 0.2s ease-out forwards;
-}
-
-#page-header.secondary.top-page {
-  animation: background-secondary-transition 0.2s ease-out forwards;
-}
-
-#page-header.sticky {
-  animation: none;
-}
-
-#page-header.top-page.open-menu {
-  animation: none;
-}
-
 #toggle-menu {
   display: none;
   margin-left: 2.4rem;
@@ -150,26 +134,6 @@
 
   to {
     transform: translateY(0);
-  }
-}
-
-@keyframes background-transition {
-  from {
-    background-color: #fff;
-  }
-
-  to {
-    background-color: var(--gray-brand);
-  }
-}
-
-@keyframes background-secondary-transition {
-  from {
-    background-color: #fff;
-  }
-
-  to {
-    background-color: var(--background-blue);
   }
 }
 
